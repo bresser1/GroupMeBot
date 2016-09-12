@@ -14,8 +14,8 @@ from magicList import *
 
 insult_urls = ["http://www.gotlines.com/insults/intelligence/", "http://www.gotlines.com/insults/ugly/", "http://www.gotlines.com/insults/ugly/2"]
 
-HOST_NAME = '0.0.0.0' # !!!REMEMBER TO CHANGE THIS!!!
-PORT_NUMBER = int(os.environ.get('PORT', 9000)) # Maybe set this to 9000.
+HOST_NAME = '0.0.0.0' 
+PORT_NUMBER = int(os.environ.get('PORT', 9000)) 
 
 
 def change_nickname():
@@ -37,7 +37,6 @@ def change_groupname():
 def make_post(content):
     bot = {"bot_id" : bot_id, "text": content}
     r = requests.post("https://api.groupme.com/v3/bots/post", params = bot)
-
 
 
 def get_food(city):
@@ -103,7 +102,6 @@ def get_last_message():
     	target_index = original_message.index('insult')
     	target = original_message[target_index + 6::].strip()
         get_insult(target)
-
 
 
 
