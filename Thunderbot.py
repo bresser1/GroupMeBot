@@ -104,9 +104,6 @@ def get_last_message():
     	target = original_message[target_index + 6::].strip()
         get_insult(target)
 
-    elif 'thunderbot' in keyword and 'harambe' in keyword:
-        make_post('DICKS OUT FOR HARAMBE')
-
 
 
 
