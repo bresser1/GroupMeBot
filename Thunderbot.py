@@ -98,7 +98,7 @@ def get_last_message():
         city = re.sub(r'[^a-zA-Z\s]',"",dirtycity)
         get_food(city)
 
-    elif 'thunderbot,' in keyword and 'insult' in keyword:
+    elif 'piers,' in keyword:
     	target_index = original_message.index('insult')
     	target = original_message[target_index + 6::].strip()
         get_insult(target)
